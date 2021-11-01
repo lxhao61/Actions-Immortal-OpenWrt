@@ -15,3 +15,7 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 
 # 取消Immortalwrt大登陆密码
 sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/zzz-default-settings
+
+# 拉取passwall源码
+#git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
+git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall

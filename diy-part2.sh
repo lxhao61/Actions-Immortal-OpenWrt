@@ -18,4 +18,4 @@ sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/zzz-default-s
 
 # 拉取passwall源码
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
-git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall
+#git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall

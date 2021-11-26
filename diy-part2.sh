@@ -20,7 +20,8 @@ sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/zzz-default-s
 rm -rf package/feeds/packages/luci-app-passwall
 
 # 拉取luci-app-passwall插件
-svn co https://github.com/lxhao61/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
+#svn co https://github.com/lxhao61/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
 
 # 拉取passwall源码
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall

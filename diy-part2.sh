@@ -17,10 +17,10 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/zzz-default-settings
 
 # 删除luci-app-passwall插件
-rm -rf package/feeds/packages/luci-app-passwall
+#rm -rf package/feeds/packages/luci-app-passwall
 
 # 拉取luci-app-passwall插件
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
 #svn co https://github.com/lxhao61/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
 
 # 拉取passwall源码

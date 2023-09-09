@@ -16,19 +16,11 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 # 取消Immortal大登陆密码
 sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/99-default-settings
 
+# 拉取phtunnel、pgyvpn源码
+git clone https://github.com/OrayOS/OpenOray.git package/OpenOray
+
 # 删除原版softethervpn5插件
 #rm -rf feeds/packages/net/softethervpn5
 
 # 拉取Lean大softethervpn5插件
 #svn co https://github.com/coolsnowwolf/packages/trunk/net/softethervpn5 feeds/packages/net/softethervpn5
-
-# 删除luci-app-passwall插件
-#rm -rf package/feeds/packages/luci-app-passwall
-
-# 拉取luci-app-passwall插件
-#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
-#svn co https://github.com/lxhao61/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
-
-# 拉取passwall源码
-#git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
-#git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall

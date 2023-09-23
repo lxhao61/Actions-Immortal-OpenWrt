@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/99-default-settings
 
 # 拉取phtunnel、pgyvpn源码
-git clone https://github.com/OrayOS/OpenOray.git package/OpenOray
+#git clone https://github.com/OrayOS/OpenOray.git package/OpenOray
 
 # 删除原版softethervpn5插件
 #rm -rf feeds/packages/net/softethervpn5

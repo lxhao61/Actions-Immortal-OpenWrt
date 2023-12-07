@@ -16,22 +16,11 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 # 取消Immortal大登陆密码
 sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/99-default-settings
 
-# 删除luci-app-passwall插件
-#rm -rf package/feeds/packages/luci-app-passwall
+# 拉取 phtunnel、pgyvpn 源码
+#git clone https://github.com/OrayOS/OpenOray.git package/feeds/OpenOray
 
-# 拉取luci-app-passwall插件
-#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
-#svn co https://github.com/lxhao61/openwrt-passwall/trunk/luci-app-passwall package/feeds/packages/luci-app-passwall
+# 提取 phtunnel 源码
+svn co https://github.com/coolsnowwolf/packages/trunk/net/phtunnel package/feeds/packages/phtunnel
 
-# 拉取passwall源码
-#git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
-#git clone https://github.com/lxhao61/openwrt-passwall.git package/passwall
-
-# 拉取phtunnel、pgyvpn源码
-git clone https://github.com/OrayOS/OpenOray.git package/OpenOray
-
-# 删除原版softethervpn5插件
-#rm -rf feeds/packages/net/softethervpn5
-
-# 拉取Lean大softethervpn5插件
-#svn co https://github.com/coolsnowwolf/packages/trunk/net/softethervpn5 feeds/packages/net/softethervpn5
+# 提取 luci-app-phtunnel 源码
+svn co https://github.com/OrayOS/OpenOray/trunk/luci-app-phtunnel package/feeds/luci/luci-app-phtunnel

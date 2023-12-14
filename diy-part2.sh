@@ -21,7 +21,7 @@ sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/99-default-se
 #git clone https://github.com/OrayOS/OpenOray.git package/feeds/OpenOray
 
 # 提取 phtunnel 源码
-svn co https://github.com/coolsnowwolf/packages/trunk/net/phtunnel package/feeds/packages/phtunnel
+#svn co https://github.com/coolsnowwolf/packages/trunk/net/phtunnel package/feeds/packages/phtunnel
 
 # 提取 luci-app-phtunnel 源码
-svn co https://github.com/OrayOS/OpenOray/trunk/luci-app-phtunnel package/feeds/luci/luci-app-phtunnel
+#svn co https://github.com/OrayOS/OpenOray/trunk/luci-app-phtunnel package/feeds/luci/luci-app-phtunnel

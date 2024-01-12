@@ -10,15 +10,13 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# 下载代码
-#git clone https://github.openwrt/openwrt.git
-#cd openwrt
-#git pull
-
-# 选择最新的稳定版本（切换分支）
-git branch -a
-git tag
+# 查看所有标签
+#git tag
+# 切换到标签v23.05.1
 git checkout v23.05.1
+
+# 回退源码
+#git reset --hard 0776e2e #等同于切换到标签v23.05.1
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default

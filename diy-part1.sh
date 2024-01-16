@@ -10,6 +10,11 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+# 查看所有标签
+#git tag
+# 切换到标签v21.02.7
+git checkout v21.02.7
+
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
@@ -17,8 +22,8 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-# 添加xiaorouji大passwall源
-#sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+# 注释掉默认 packages 源
+sed -i 's/^\(.*packages\)/#&/' feeds.conf.default
 
-# 添加phtunnel、pgyvpn源码
-echo 'src-git OpenOray https://github.com/OrayOS/OpenOray' >>feeds.conf.default
+# 添加 packages 源
+sed -i '$a src-git packages https://github.com/lxhao61/packages.git;openwrt-21.02' feeds.conf.default

@@ -16,7 +16,7 @@
 git checkout v21.02.7
 
 # 回退源码
-#git reset --hard b6dd058ff186fa7d79a63dd6269de4d16d1153d7 #等同于切换到标签v21.02.7
+#git reset --hard b6dd058 #等同于切换到标签v21.02.7
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default

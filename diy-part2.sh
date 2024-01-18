@@ -12,15 +12,10 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
+
+# 修改主机名
+sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 
 # 取消Immortal大登陆密码
 #sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/99-default-settings
-
-# 拉取phtunnel、pgyvpn源码
-#git clone https://github.com/OrayOS/OpenOray.git package/OpenOray
-
-# 删除原版softethervpn5插件
-#rm -rf feeds/packages/net/softethervpn5
-
-# 拉取Lean大softethervpn5插件
-#svn co https://github.com/coolsnowwolf/packages/trunk/net/softethervpn5 feeds/packages/net/softethervpn5

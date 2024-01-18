@@ -26,13 +26,17 @@ rm -rf feeds/packages/lang/golang
 # 拉取 golang 源码
 git clone https://github.com/sbwml/packages_lang_golang -b 21.x feeds/packages/lang/golang
 
-# 删除自带 xray-core 源码
-rm -rf feeds/packages/net/xray-core
-rm -rf package/feeds/packages/xray-core
-
 # 删除自带 hysteria 源码
 rm -rf feeds/packages/net/hysteria
 rm -rf package/feeds/packages/hysteria
+
+# 删除自带 v2ray-geodata 源码
+rm -rf feeds/packages/net/v2ray-geodata
+rm -rf package/feeds/packages/v2ray-geodata
+
+# 删除自带 xray-core 源码
+rm -rf feeds/packages/net/xray-core
+rm -rf package/feeds/packages/xray-core
 
 # 删除自带 luci-app-passwall 源码
 rm -rf feeds/luci/applications/luci-app-passwall

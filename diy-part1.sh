@@ -13,7 +13,7 @@
 # 查看所有标签
 #git tag
 # 切换到标签v21.02.7
-#git checkout v21.02.7
+git checkout v21.02.7
 
 # 回退源码
 #git reset --hard b6dd058 #等同于切换到标签v21.02.7

@@ -19,3 +19,6 @@ sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 
 # 取消Immortal大登陆密码
 #sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/99-default-settings
+
+# 拉取phtunnel、pgyvpn源码
+#git clone https://github.com/OrayOS/OpenOray.git package/OpenOray

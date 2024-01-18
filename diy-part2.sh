@@ -20,6 +20,12 @@ sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 # 取消Immortal大登陆密码
 #sed -i 's/^\(.*99999\)/#&/' package/emortal/default-settings/files/99-default-settings
 
+# 删除自带 golang 源码
+rm -rf feeds/packages/lang/golang
+
+# 拉取 golang 源码
+git clone https://github.com/sbwml/packages_lang_golang -b 21.x feeds/packages/lang/golang
+
 # 删除自带 xray-core 源码
 rm -rf feeds/packages/net/xray-core
 rm -rf package/feeds/packages/xray-core

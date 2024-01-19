@@ -35,21 +35,19 @@ sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 #rm -rf package/feeds/packages/v2ray-geodata
 
 # 删除自带 xray-core 源码
-rm -rf feeds/packages/net/xray-core
-rm -rf package/feeds/packages/xray-core
+#rm -rf feeds/packages/net/xray-core
+#rm -rf package/feeds/packages/xray-core
 
 # 删除自带 luci-app-passwall 源码
-rm -rf feeds/luci/applications/luci-app-passwall
-rm -rf package/feeds/luci/luci-app-passwall
+#rm -rf feeds/luci/applications/luci-app-passwall
+#rm -rf package/feeds/luci/luci-app-passwall
 
 # 拉取 PassWall 源码
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/feeds/packages/passwall
-#git clone -b packages https://github.com/lxhao61/openwrt-passwall.git package/feeds/packages/passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/feeds/packages/passwall
 #cd package/feeds/packages/passwall
 #git checkout c189a68728d6bb65d9fb4b47fdacea3ba970a624
 #cd -
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/feeds/luci/luci-app-passwall
-#git clone -b luci https://github.com/lxhao61/openwrt-passwall.git package/feeds/luci/luci-app-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall.git package/feeds/luci/luci-app-passwall
 #cd package/feeds/luci/luci-app-passwall
 #git checkout d1e618220a9a0a4b73d536101f452a2f4cf14861
 #cd -

@@ -56,6 +56,3 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/feeds/luci/l
 
 # 拉取 ShadowSocksR Plus+ 源码
 #git clone -b master https://github.com/fw876/helloworld.git package/feeds/helloworld
-
-# 拉取 phtunnel、pgyvpn 源码
-#git clone https://github.com/OrayOS/OpenOray.git package/feeds/OpenOray

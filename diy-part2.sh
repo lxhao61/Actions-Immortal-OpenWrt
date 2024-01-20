@@ -30,6 +30,10 @@ git clone https://github.com/sbwml/packages_lang_golang -b 21.x feeds/packages/l
 rm -rf feeds/packages/net/hysteria
 rm -rf package/feeds/packages/hysteria
 
+# 删除自带 gn 源码
+#rm -rf feeds/packages/devel/gn
+#rm -rf package/feeds/packages/gn
+
 # 删除自带 v2ray-geodata 源码
 rm -rf feeds/packages/net/v2ray-geodata
 rm -rf package/feeds/packages/v2ray-geodata

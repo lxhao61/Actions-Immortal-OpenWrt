@@ -63,6 +63,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/feeds/luci/l
 rm -rf feeds/packages/net/tailscale
 #rm -rf package/feeds/packages/tailscale
 
+# 筛选程序
 function merge_package(){
     # 参数1是分支名,参数2是库地址。所有文件下载到指定路径。
     # 同一个仓库下载多个文件夹直接在后面跟文件名或路径，空格分开。
@@ -81,5 +82,5 @@ function merge_package(){
     done
     cd "$rootdir"
 }
-
+# 提取 tailscale 源码
 merge_package main https://github.com/kenzok8/small-package feeds/packages/net/tailscale tailscale

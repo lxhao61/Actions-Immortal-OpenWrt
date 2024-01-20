@@ -30,6 +30,10 @@ sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 #rm -rf feeds/packages/net/hysteria
 #rm -rf package/feeds/packages/hysteria
 
+# 删除自带 gn 源码
+#rm -rf feeds/packages/devel/gn
+#rm -rf package/feeds/packages/gn
+
 # 删除自带 v2ray-geodata 源码
 #rm -rf feeds/packages/net/v2ray-geodata
 #rm -rf package/feeds/packages/v2ray-geodata

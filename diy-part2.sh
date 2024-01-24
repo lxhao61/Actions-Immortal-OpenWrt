@@ -31,6 +31,10 @@ sed -i "s/hostname='.*'/hostname='OpenWrt'/g" package/base-files/files/bin/confi
 #rm -rf feeds/packages/devel/gn
 #rm -rf package/feeds/packages/gn
 
+# 删除自带 naiveproxy
+#rm -rf feeds/packages/net/naiveproxy
+#rm -rf package/feeds/packages/naiveproxy
+
 # 删除自带 v2ray-geodata
 #rm -rf feeds/packages/net/v2ray-geodata
 #rm -rf package/feeds/packages/v2ray-geodata

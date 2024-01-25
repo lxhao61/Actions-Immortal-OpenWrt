@@ -40,4 +40,4 @@ function merge_package(){
     cd "$rootdir"
 }
 # 提取 xray-core
-merge_package master https://github.com/immortalwrt/packages.git feeds/packages/net/xray-core net/xray-core
+merge_package master https://github.com/immortalwrt/packages.git feeds/packages/net net/xray-core

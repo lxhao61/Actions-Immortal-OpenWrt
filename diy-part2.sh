@@ -17,6 +17,9 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 # 修改主机名
 sed -i "s/hostname='.*'/hostname='OpenWrt'/g" package/base-files/files/bin/config_generate
 
+# 删除自带 hysteria
+rm -rf feeds/packages/net/hysteria
+
 # 删除自带 xray-core
 #rm -rf feeds/packages/net/xray-core
 
@@ -39,5 +42,7 @@ function merge_package(){
     done
     cd "$rootdir"
 }
+# 提取 hysteria
+merge_package main https://github.com/xiaorouji/openwrt-passwall-packages.git feeds/packages/net hysteria
 # 提取 xray-core
 #merge_package master https://github.com/immortalwrt/packages.git feeds/packages/net net/xray-core

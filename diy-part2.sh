@@ -19,13 +19,10 @@ sed -i "s/hostname='.*'/hostname='OpenWrt'/g" package/base-files/files/bin/confi
 
 # 删除自带 hysteria
 rm -rf feeds/packages/net/hysteria
-
 # 删除自带 naiveproxy
 rm -rf feeds/packages/net/naiveproxy
-
 # 删除自带 xray-core
 rm -rf feeds/packages/net/xray-core
-
 # 删除自带 tailscale
 rm -rf feeds/packages/net/tailscale
 

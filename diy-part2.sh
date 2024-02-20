@@ -45,9 +45,11 @@ function merge_package(){
     done
     cd "$rootdir"
 }
-# 提取 hysteria、xray-core
-merge_package main https://github.com/xiaorouji/openwrt-passwall-packages.git feeds/packages/net hysteria xray-core
+# 提取 hysteria
+merge_package main https://github.com/xiaorouji/openwrt-passwall-packages.git feeds/packages/net hysteria
 # 提取 naiveproxy
 #merge_package master https://github.com/immortalwrt/packages.git feeds/packages/net net/naiveproxy
+# 提取 xray-core
+merge_package main https://github.com/xiaorouji/openwrt-passwall-packages.git feeds/packages/net xray-core
 # 提取 tailscale
-#merge_package master https://github.com/openwrt/packages.git feeds/packages/net net/tailscale
+#merge_package master https://github.com/immortalwrt/packages.git feeds/packages/net net/tailscale

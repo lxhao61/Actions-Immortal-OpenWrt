@@ -10,9 +10,12 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+# 查看所有标签
+#git tag
+# 切换到标签 v25.12.2
+git checkout v25.12.2
+
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default

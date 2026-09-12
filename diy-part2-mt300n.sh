@@ -92,13 +92,13 @@ git clone https://github.com/asvow/luci-app-tailscale.git package/chajian/tailsc
 
 # 修改默认 IP
 #sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
-sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 
 # 修改默认主题
 #sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci-light/Makefile
 
 # 修改主机名
-sed -i "s/hostname='.*'/hostname='D2'/g" package/base-files/files/bin/config_generate
+sed -i "s/hostname='.*'/hostname='MT300Nv2'/g" package/base-files/files/bin/config_generate
 
 # 修改默认时区
 sed -i "s/timezone='.*'/timezone='CST-8'/g" package/base-files/files/bin/config_generate
@@ -109,6 +109,8 @@ sed -i 's/NAME="%D"/NAME="OpenWrt"/g' package/base-files/files/usr/lib/os-releas
 sed -i 's/PRETTY_NAME="%D %V"/PRETTY_NAME="OpenWrt %V"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/OPENWRT_RELEASE="%D %V %C"/OPENWRT_RELEASE="OpenWrt %V %C"/g' package/base-files/files/usr/lib/os-release
 
-# 开启 WiFi
+# 开启 WiFi 及接入配置
 #sed -i 's/disabled=.*/disabled=0/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 sed -i 's/ssid=.*/ssid=OpenWrt/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+#sed -i 's/encryption=.*/encryption=psk-mixed/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+#sed -i 's/key=.*/key=MT300Nv21891155/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
